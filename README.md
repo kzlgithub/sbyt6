@@ -75,6 +75,7 @@ touch /etc/rewrite.resolved.sh && chmod 777 /etc/rewrite.resolved.sh
 ### 写入内容到/etc/rewrite.resolved.sh：
 <details>
 <summary>点击展开查看完整代码</summary>
+ 
 ```
 #!/bin/bash
 
