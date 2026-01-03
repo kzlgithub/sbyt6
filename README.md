@@ -104,3 +104,19 @@ echo "/etc/resolv.conf已经更新"
 echo -e "\033[32m主机重启或者网络服务重启需要运行此脚本，或设为开机启动\033[0m"
 ```
 </details>
+
+### 运行脚本并且查看是否写入：
+```
+systemctl restart systemd-resolved.service && chmod 777 /etc/resolv.conf && bash /etc/rewrite.resolved.sh && cat /etc/resolv.conf
+```
+
+### 添加开机启动：
+```
+crontab -e
+@reboot /etc/rewrite.resolved.sh
+*/3 * * * * /etc/rewrite.resolved.sh
+```
+### 测试DNS缓存是否起作用：
+```
+dig youtube.com
+```
