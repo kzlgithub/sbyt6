@@ -15,6 +15,7 @@ cp /etc/bind/named.conf.options /etc/bind/named.conf.options.backup && chmod 777
 ### 写入内容到/etc/bind/named.conf.options：
 <details>
 <summary>点击展开查看完整代码</summary>
+ 
 ```
 options {
  directory "/var/cache/bind";
