@@ -102,7 +102,5 @@ echo "写入内容: "${nameserver}
 echo "/etc/resolv.conf已经更新"
 
 echo -e "\033[32m主机重启或者网络服务重启需要运行此脚本，或设为开机启动\033[0m"
-#echo -e "\033[32m        by科卓利企业管理\033[0m"
-
 ```
 </details>
