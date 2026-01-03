@@ -4,3 +4,7 @@
 ```
 apt-get install dnsutils
 ```
+### 安装bind9：
+```
+apt-get install bind9
+```
