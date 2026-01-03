@@ -58,3 +58,16 @@ options {
 
 ```
 </details>
+
+### 重启bind：
+```
+systemctl restart bind9
+```
+### 查看bind运行状态：
+```
+systemctl status bind9
+```
+### 新建文件/etc/rewrite.resolved.sh：
+```
+touch /etc/rewrite.resolved.sh && chmod 777 /etc/rewrite.resolved.sh
+```
